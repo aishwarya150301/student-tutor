@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/19b402f216.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+    <title>Hometutor</title>
+
+    <style>
+        h2{
+            color: #161f45;
+        }
+        p{
+            padding: 10px;
+        }
+        .navigation .nav-items a:hover{
+            color: #161f45;
+            
+        }
+        
+        .our-services{
+            margin-top: 60px;
+        }
+        .about-part1 h2{
+            font-size: 40px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+        }
+        .row{
+            padding-bottom: 0;
+        }
+        
+        .our-services{
+            padding-bottom: 0;
+        }
+        .text-col-content{
+            padding-bottom: 10px;
+        }
+
+        /*==========form============*/
+        .hero{
+            padding-left: 70px;
+            padding-top: 0;
+        }
+       .form-box{
+        width: 450px;
+        height: 580px;
+        position: relative;
+        margin: 6% auto;
+        background: #fff;
+        padding-left: 5px;
+        padding-right: 0;
+        padding-top: 0;
+        
+        overflow: hidden;
+       }
+       .button-box{
+        width: 220px;
+        margin: 35px auto;
+        position: relative;
+        box-shadow: 0 0 20px 9px #e8e8eb;
+        border-radius: 30px;
+       }
+       .toggle-btn{
+        padding: 10px 30px;
+        cursor: pointer;
+        background: transparent;
+        border: 0;
+        outline: none;
+        position: relative;
+       }
+       #btn{
+        top: 0;
+        left: 0;
+        position: absolute;
+        width: 110px;
+        height: 100%;
+        background: linear-gradient(to right, #3e4255, #acb0c6,#3e4255);
+        border-radius: 30px;
+        transition: .5s;
+       }
+       .social-icons{
+        text-align: center;
+       }
+       .input-group{
+        top: 180px;
+        position: absolute;
+        width: 350px;
+        transition: .5s;
+       }
+       .input-field{
+        width: 100%;
+        padding: 10px 0;
+        margin: 5px 0;
+        border-left: 0;
+        border-top: 0;
+        border-right: 0;
+        border-bottom: 1px solid #999;
+        outline: none;
+        background: transparent;
+       }
+       .submit-btn{
+        width: 85%;
+        padding: 10px 30px;
+        cursor: pointer;
+        display: block;
+        margin: auto;
+        background: linear-gradient(to right,#3e4255, #acb0c6,#3e4255);
+        border: 0;
+        outline: none;
+        border-radius: 30px;
+       }
+       .check-box{
+        margin: 30px 10px 30px 0;
+       }
+       span{
+        color: #777;
+        font-size: 12px;
+        bottom: 68px;
+        position: absolute;
+       }
+       #login{
+        left: 50px;
+       padding-top: 50px;
+        
+       }
+       #register{
+        left: 450px;
+        padding-top: 0;
+       }
+
+       .about-part2S{
+        width: 100%;
+        display: flex;
+        padding-top: 0;
+       }
+
+       .about-part2S .stepsS{
+        width: 100%;
+        padding: 0 40px ;
+       }
+       .about-part2S .stepsS h1{
+        color: #161f45;
+        text-align: center;
+        padding-top: 0;
+        padding-bottom: 20px;
+        font-style: 'Poppins', sans-serif;
+       }
+
+       .about-part2S .stepsS img{
+        height: 300px;
+        width: 300px;
+        border-radius: 50%;
+       }
+       .about-part2S .stepsS p{
+        font-size: 1.2em;
+        font-weight: 600;
+        text-decoration: none;
+        text-align: center;
+       }
+       .about-part2S .stepsS img:hover{
+        cursor: pointer;
+        transform: translateY(-10px);
+        transition: transform 0.5s;
+        
+       }
+
+       .tutorpart3{
+        width: 100%;
+        height: 50vh;
+        background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.9)),url(images/step4S.avif);
+        background-size: cover;
+        background-position: center;
+        padding: 10px 8%;
+   
+       }
+       marquee{
+        width: 100%;
+        margin-top: 120px;
+        color: #fff;
+        font-size: 70px;
+        text-align: center; 
+        backdrop-filter: blur(10px);
+       }
+       marquee p{
+        color: grey;
+       }
+
+
+       @media screen and (max-width:1100px){
+           
+            .text-col{
+                display: flex;
+                flex-basis: 100%;
+            }
+             
+            .text-col .img-col img {
+               
+                height: 250px;
+                width: 250px;
+            }
+            .hero{
+                display: flex;
+                flex-basis: 100%;
+                padding:  0 40px ;
+            }
+            
+            .text-col-content{
+                padding: 10px;
+                font-size: medium;
+            }
+            .about-part1 h2{
+               font-size: 30px;
+            }
+            .about-part1 p{
+                font-size: 15px;
+            }
+            .about-part2S{
+            display: flex;
+            padding-top: 0;
+            }
+
+           .about-part2S .stepsS{ 
+              padding: 0 20px ;
+            }
+            .about-part2S .stepsS img{
+                width: 200px;
+                height: 200px;
+            }
+            .about-part2S .stepsS h1{
+                font-size: 20px;
+
+            }
+            .about-part2S .stepsS p{
+                font-size: 15px;
+            }
+            marquee{
+                margin-top: 110px;
+                font-size: 40px;
+            }
+             
+       }
+       @media screen and (max-width:785px){
+            .our-services{
+                padding-bottom: 0;
+                margin-bottom: 0;
+            }
+            .our-services .row{
+              margin-left: 0px;
+            }
+           
+           
+            .row{
+                padding-bottom: 0;
+                padding-left: 0;
+              
+               
+            }
+            .row:nth-child(1){
+                flex-direction: row-reverse;
+            }
+            
+            .row .text-col{
+                display: inline;
+                margin-left: 100px;
+
+               
+               
+            }
+            .text-col-content p{
+                font-size: 18px;
+              
+            }
+            
+            .row .img-col img{
+                height: 280px;
+                width: 340px;
+            }
+            .hero{
+              margin-left: 20px;
+              padding-right: 0;
+             
+            }
+            .hero .form-box{
+                width: 340px;
+                height: 580px;
+                
+            }
+
+            .hero .form-box .input-group{
+              padding-right: 110px;
+            
+            }
+            .about-part1{
+                padding-bottom:20px;
+                margin-bottom: 0;
+            }
+            .about-part1 p{
+                padding-bottom: 0;
+            }
+            
+            .about-part2S{
+                display: inline;
+                padding-bottom: 30px;
+                
+               
+            }
+            .about-part2S .stepsS{
+               justify-content: center;
+               padding-bottom: 20px;
+               align-items:center;
+              
+            }
+            .about-part2S .stepsS h1{
+                font-size: 22px;
+                padding-bottom: 10px;
+                justify-content: center;
+                text-align: center;
+            }
+            .about-part2S .stepsS img{ 
+                height: 200px;
+                width: 200px;  
+            }
+
+            .about-part2S .stepsS p{
+                padding-top: 0;
+                font-size: 18px;
+            }
+            .imgS{
+                margin-left: 80px;
+            }
+            .tutorpart3{
+                height: 40vh;
+            }
+            marquee{
+             margin-top: 75px;
+             font-size: 40px; 
+            }
+            #about-section{
+                height: 100%;
+                background-color:rgb(245, 245, 232);
+            }
+        }  
+
+        
+    </style>
+</head>
+
+
+<body>
+
+    <header style="backdrop-filter: blur(20px) brightness(1.5); background: linear-gradient(to bottom,#161f45, #fff); border-bottom: 0.1px solid #fff;" >
+        <div class="nav-bar">
+            <a href="" class="logo">Logo</a>
+            <div class="navigation">
+                <div class="nav-items" id="sidemenu">
+                    <a href="#"><i class="fa-solid fa-xmark nav-close-btn "></i></a>
+                    <a href="#"><i class="fa-solid fa-house"></i> Home</a>
+                    <hr>
+                    <a href="#"><i class="fa-solid fa-circle-info"></i>About</a>
+                    <hr>
+                    <a href="#our-services-section" style="color: #161f45 "><i class="fa-solid fa-star"></i>Our Services</a>
+                    <hr>
+                    <a href="#"><i class="fa-solid fa-globe"></i>Explore</a>
+                    <hr>
+                    <a href="#"><i class="fa-solid fa-phone "></i>Contact</a>
+
+                </div>
+            </div>
+            <a href="#"><i class="fa-solid fa-bars nav-menu-btn"></i></a>
+            
+        </div>
+    </header>
+
+
+    <section   class="our-services" id="our-services-section">
+        <div class="row">
+            <div class="text-col">
+              <div class="text-col-content">
+                <h2>Hier a Home tutor?</h2>
+              <p>We make your work easier by searching and providing you with correct teacher</p>
+              <p>Register your details here with us and we will reach you out!!</p>
+              </div>
+
+              <div class="img-col">
+                <img src="images/hier-tutor2.avif" alt="">
+              </div>
+            </div>
+
+            <div class="hero">
+                <div class="form-box">
+                    <div class="button-box">
+                        <div id="btn"></div>
+                       <button type="button" class="toggle-btn" onclick="login()">Log in</button>
+                       <button type="button" class="toggle-btn" onclick="register()">Register</button>
+                    </div>
+
+                    <div class="contact-social-icons social-icons">
+                        <a href="#" target="_blank"> <i class="fab fa-facebook"></i> </a>
+                        <a href="#" target="_blank"> <i class="fab fa-instagram"></i> </a>
+                        <a href="#" target="_blank"> <i class="fab fa-twitter-square"></i> </a>
+                    </div>
+
+                    <form id="login" class="input-group">
+                        <input type="text" class="input-field" placeholder="User Id" required>
+                        <input type="password" class="input-field" placeholder="Enter Password" required>
+                        <input type="checkbox" class="check-box"><span>Remember Password</span>
+                        <button type="submit" class="submit-btn">Log in</button>
+                    </form>
+
+                    <form id="register" class="input-group">
+                        <input type="text" class="input-field" placeholder="Full Name" required>
+                        <input type="text" class="input-field" placeholder="User Id" required>
+                        <input type="email" class="input-field" placeholder="Email Id" required>
+                        <input type="number" class="input-field" placeholder="Phone Number" required>
+                        <input type="password" class="input-field" placeholder="Enter Password" required>
+                        <input type="checkbox" class="check-box"><span>I agree to the terms & conditions</span>
+                        <button type="submit" class="submit-btn">Rrgister</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    
+    
+
+    <section class="about section" id="about-section" >
+        <div  class="about-part1">
+           <h2>How we work?</h2>
+           <p>Welcome to (website name) , where the worlds of passionate teachers and eager students collide. Our platform is dedicated to connecting educators who are ready to inspire with students who are hungry for knowledge. Our vision is to create a seamless bridge between teachers looking to share their expertise and students seeking that personalized, one-on-one learning experience.</p>
+           <p>At this platform, we believe that education is a journey best taken with the right guide. Our team of education enthusiasts understands the significance of tailored learning, and that's why we've crafted a platform that empowers both teachers and students to embark on meaningful learning journeys. Our community thrives on the passion for knowledge, making it the perfect destination for those who are committed to not only imparting education but also to absorbing it.</p>
+
+        </div>
+
+        <div class="about-part2S">
+           
+            <div class="stepsS">
+                <h1>Step 1</h1>
+                <img src="images/step1S.avif" alt="" class="imgS">
+                <p>Begin by signing up on our platform or contacting us directly for inquiries.</p>
+            </div>
+            
+            <div class="stepsS">
+                <h1>Step 2</h1>
+                <img src="images/step2S.avif" alt="" class="imgS">
+                <p>We'll conduct a customized search to find the perfect tutor for your needs.</p>
+            </div>
+
+            <div class="stepsS">
+                <h1>Step 3</h1>
+                <img src="images/step3S.avif" alt="" class="imgS">
+                <p>We'll connect you with the ideal tutor for a seamless learning experience.</p>
+            </div>
+        </div>
+ 
+        
+       
+    </section>
+
+    <section class="tutorpart3">
+
+       <marquee behavior="" direction="scroll">
+        <div >
+            
+            <p> For any Type of enquiry feel free to contact us :  <i class="fa-solid fa-phone"></i> 1234456566 , 5648446979</p>
+        </div>
+       </marquee>
+
+    </section>
+
+    <section class="contact" id="contact-section">
+        <div class="container">
+          <h1>Contact Us</h1>
+             <div class="contact-row">
+                 <div class="contact-left">
+                   
+                   <p> <i class="fa-solid fa-location-dot"></i> N-11/58 Ranipur Mehmoorganj, Varanasi 221010 </p>
+                   <p> <i class="fa-solid fa-square-phone"></i> 1234567890</p>
+                   <p> <i class="fa-solid fa-envelope"></i> aishwarya@gmail.com </p>
+                 </div>
+  
+                 <div class="contact-right">
+                  <h2>You can also join us on social platforms</h2>
+                  <div class="contact-social-icons" >
+                       <a href="#" target="_blank"> <i class="fab fa-facebook"></i> </a>
+                       <a href="#" target="_blank"> <i class="fab fa-twitter-square"></i> </a>
+                       <a href="#" target="_blank"> <i class="fab fa-instagram"></i> </a>
+                       <a href="#" target="_blank"> <i class="fab fa-linkedin"></i> </a>
+                  </div>
+                 </div>
+             </div>
+        </div>
+  
+    </section>
+    <div class="copyright">
+        <p>copyright@ aishwarya <i class="fa-solid fa-heart"></i> srivastava</p>
+    </div>
+  
+
+
+    <script>
+
+        var x = document.getElementById("login");
+        var y = document.getElementById("register");
+        var z = document.getElementById("btn");
+
+        function register(){
+            x.style.left = "-480px";
+            y.style.left = "50px";
+            z.style.left = "110px";
+        }
+
+        function login(){
+            x.style.left = "50px";
+            y.style.left = "450px";
+            z.style.left = "0";
+
+        }
+
+    </script>
+   
+
+    <script src="swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+    
+</body>
+
+</html>
